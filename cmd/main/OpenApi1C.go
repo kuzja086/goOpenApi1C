@@ -1,6 +1,7 @@
 package main
 
 import (
+	"goOpenApi1C/internal/commands"
 	"log"
 	"os"
 
@@ -29,7 +30,7 @@ func main() {
 			},
 		},
 		Action: func(c *cli.Context) error {
-			// generate.Generate()
+			commands.GenerateOpenApi(c)
 			return log.Output(0, "Sucsess")
 		},
 	}

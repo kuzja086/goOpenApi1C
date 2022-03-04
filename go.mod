@@ -1,4 +1,4 @@
-module cmd/main
+module goOpenApi1C
 
 go 1.17
 
